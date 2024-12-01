@@ -1,0 +1,78 @@
+<!DOCTYPE html />
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/icon.svg" />
+    <title>ფილმების ძებნის ფორმა</title>
+</head>
+
+<body>
+    <h1>ფილმების ძებნის ფორმა</h1>
+
+    <form action="https://www.ge.movie/filter-movies">
+        <label for="type">რა გსურთ ეძებოთ:</label>
+        <br />
+        <select id="type" name="type">
+            <option value="movie">ფილმი</option>
+            <option value="serial">სერიალი</option>
+            <option value="search">ყველაფერი</option>
+        </select>
+        <br />
+        <br />
+
+        <label for="genres[]">ჟანრები:</label>
+        <br />
+        <select id="genres[]" name="genres[]">
+            <option>არჩევა...</option>
+            <option value="detektivi">დეტექტივი</option>
+            <option value="komedia">კომედია</option>
+            <option value="fantastika">ფანტასტიკა</option>
+            <option value="drama">დრამა</option>
+            <option value="sashinelebata">საშინელება</option>
+        </select>
+        <br />
+        <br />
+
+        <label for="languages">ენა:</label>
+        <br />
+        <select id="languages" name="languages">
+            <option>არჩევა...</option>
+            <option value="ka">ქართული</option>
+            <option value="en">ინგლისური</option>
+            <option value="fr">ფრანგული</option>
+        </select>
+        <br />
+        <br />
+
+        <label for="countries">ქვექნები:</label>
+        <br />
+        <select id="countries" name="countries">
+            <option>არჩევა...</option>
+            <option value="us">აშშ</option>
+            <option value="ge">საქართველო</option>
+            <option value="fr">საფრანგეთი</option>
+        </select>
+        <br />
+        <br />
+
+        <label for="imdb">IMDb რეიტინგი: 1-10</label>
+        <br />
+        <input type="number" id="imdb" name="imdb" size="1" min="1.1" max="10" />
+        <br />
+        <br />
+
+        <label for="year">გამოსვლის წელი:1920-2024</label>
+        <br />
+        <input type="number" id="year" name="year" size="1" min="1924" max="2024" />
+        <label for="year"></label>
+        <input type="number" id="year" name="year" size="1" min="1924" max="2024" />
+        <br />
+        <br />
+
+        <input type="submit" value="ძებნა" />
+    </form>
+</body>
+
+</html>
